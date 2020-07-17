@@ -8,8 +8,6 @@ div.container {
   width: 100vw;
 }
 
-
-
 header {
   width: 100%;
   top: 0;
@@ -65,9 +63,79 @@ header div.menu ul li a {
 }
 
 @media only screen and (max-width: 670px) {
-  header.new {
+  header {
     justify-content: center;
   }
 }
 
+/* FIM HEADER */
 
+/* H1 */
+div.h1 h1{
+  padding: 0 5%;
+}
+
+/* MAIN */
+
+main {
+  padding: 0 5%;
+  display: flex;
+  background-color: rgb(163, 168, 167);
+}
+
+section {
+  width: 70%;
+  background-color: brown;
+}
+
+div.box {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+div.question {
+  width: 100%;
+  padding: 10px;
+  background-color: darkgrey;
+}
+
+div.options {
+  width: 100%;
+  /* padding: 10px; */
+  background-color: darkkhaki;
+}
+
+div.options ul {
+  list-style: none;
+}
+
+div.options ul li {
+  margin: 10px 0;
+  border-radius: 10px;
+  height: 30px;
+  background-color: darkorchid;
+}
+
+div.options ul li a {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: darkolivegreen;
+}
+
+
+
+
+
+
+
+aside {
+  width: 30%;
+  padding: 5%;
+  background-color: coral;
+}
