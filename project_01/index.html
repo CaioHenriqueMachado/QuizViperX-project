@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>QUIZ VIPER X</title>
 </head>
 <body>
@@ -28,14 +28,15 @@
 
     <main>
       <section>
+        <form name="formTest" method="POST">
         <div class="box">
           <div class="question">QUESTÃO 1</div>
           <div class="options">
             <ul>
-              <li><a href="#">RESPOSTA 1</a></li>
-              <li><a href="#">RESPOSTA 2</a></li>
-              <li><a href="#">RESPOSTA 3</a></li>
-              <li><a href="#">RESPOSTA 4</a></li>
+              <li><button value="1" name="a">RESPOSTA</button></li>
+              <li><button value="2" name="a">RESPOSTA</button></li>
+              <li><button value="3" name="a">RESPOSTA</button></li>
+              <li><button value="4" name="a">RESPOSTA</button></li>
             </ul>
           </div>
         </div>
@@ -43,10 +44,10 @@
           <div class="question">QUESTÃO 1</div>
           <div class="options">
             <ul>
-              <li><a href="#">RESPOSTA 1</a></li>
-              <li><a href="#">RESPOSTA 2</a></li>
-              <li><a href="#">RESPOSTA 3</a></li>
-              <li><a href="#">RESPOSTA 4</a></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
             </ul>
           </div>
         </div>
@@ -54,10 +55,10 @@
           <div class="question">QUESTÃO 1</div>
           <div class="options">
             <ul>
-              <li><a href="#">RESPOSTA 1</a></li>
-              <li><a href="#">RESPOSTA 2</a></li>
-              <li><a href="#">RESPOSTA 3</a></li>
-              <li><a href="#">RESPOSTA 4</a></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
             </ul>
           </div>
         </div>
@@ -65,13 +66,19 @@
           <div class="question">QUESTÃO 1</div>
           <div class="options">
             <ul>
-              <li><a href="#">RESPOSTA 1</a></li>
-              <li><a href="#">RESPOSTA 2</a></li>
-              <li><a href="#">RESPOSTA 3</a></li>
-              <li><a href="#">RESPOSTA 4</a></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
+              <li><button value="7">RESPOSTA</button></li>
             </ul>
           </div>
         </div>
+        <div class="concluded">
+          <button type="submit">
+            FINALIZAR
+          </button>
+        </div>
+      </form>
 
       </section>
       <aside>
@@ -82,8 +89,8 @@
     <footer>
       Aqui é o rodapé
     </footer>
-
-
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
