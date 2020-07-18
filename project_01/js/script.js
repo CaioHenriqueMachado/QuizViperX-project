@@ -13,6 +13,14 @@ function calculator(question, number) {
   console.log(options);
 }
 
-function final (){
-  console.log('enviou')
+var resp = [ 1, 3, 1, 1];
+
+function finish (){
+  var points = 0;
+  options.forEach( (alternative, i) => {
+  alternative == resp[i] ? points+= 25 : points+= 0;
+  });
+ 
+ console.log(points); 
 }
+
