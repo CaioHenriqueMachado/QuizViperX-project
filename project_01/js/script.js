@@ -2,20 +2,15 @@ var options = [ 0, 0, 0, 0 ];
 
 function teste1(option) {
   const divs = document.getElementsByClassName('question1');
-  const divSelected = document.getElementsByClassName('question1 selected');
-  console.log(divSelected);
-  divSelected[0].classList.replace('selected', 'unselected');
+  initial = document.getElementsByClassName('question1 selected');
 
-  // 
-  console.log(divs);
-
-  // for  (let div in divs ){
-  //   console.log(div);
-  // }
-
-//   console.log(divs.forEach());
+  if ( initial.length != 0) {
+    const divSelected = document.getElementsByClassName('question1 selected');
+    divSelected[0].classList.replace('selected', 'unselected');
+  }
   divs[option].classList.add('selected');
-//   options[0] = option;
+
+
 }
 
 function teste2(option) {
