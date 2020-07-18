@@ -123,11 +123,15 @@ div.options ul li div {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+
+}
+
+.unselected {
   background-color: darkolivegreen;
 }
 
 .selected {
-  background-color: red;
+  background-color: red !important;
 }
 
 
