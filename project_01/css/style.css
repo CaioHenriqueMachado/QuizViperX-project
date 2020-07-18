@@ -126,7 +126,7 @@ div.options ul li div {
   background-color: darkolivegreen;
 }
 
-div.options ul li div:active {
+.selected {
   background-color: red;
 }
 

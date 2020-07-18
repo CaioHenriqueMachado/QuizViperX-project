@@ -1,6 +1,11 @@
 var options = [ 0, 0, 0, 0 ];
 
 function teste1(option) {
+  var models = document.getElementsByClassName('question1');
+  // var model = models[option];
+  models[option].element.classList('selected');
+  console.log(models);
+  console.log(model);
   options[0] = option;
   console.log(options);
 }
