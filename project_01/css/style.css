@@ -131,7 +131,7 @@ div.options ul li div {
 }
 
 .selected {
-  background-color: red !important;
+  background-color: red;
 }
 
 
@@ -145,16 +145,18 @@ div.concluded {
   text-align: center;
 }
 
-div.concluded button {
+div.concluded div.button {
   width: 100%;
   height: 40px;
   border-radius: 10px;
-  border: none;
+  background-color: red;
+  display: block;
+  justify-content: center;
 }
 
 
-button:active {
-  opacity: 0.9;
+div.button:active {
+  opacity: 0.5;
 }
 
 aside {

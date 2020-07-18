@@ -1,6 +1,6 @@
 var options = [ 0, 0, 0, 0 ];
 
-function calculator(option, question) {
+function calculator(question, number) {
   const divs = document.getElementsByClassName('question'+ String(question));
   initial = document.getElementsByClassName('question'+ String(question) +' selected');
 
@@ -8,5 +8,11 @@ function calculator(option, question) {
     const divSelected = document.getElementsByClassName('question'+ String(question) +' selected');
     divSelected[0].classList.replace('selected', 'unselected');
   }
-  divs[option].classList.add('selected');
+  divs[number].classList.add('selected');
+  options[question - 1] = number + 1;
+  console.log(options);
+}
+
+function final (){
+  console.log('enviou')
 }
