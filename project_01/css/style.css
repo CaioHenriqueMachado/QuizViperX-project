@@ -69,12 +69,14 @@ header div.menu ul li a {
 }
 /* FIM HEADER */
 div.h1 h1{
+  margin: 20px 0;
   padding: 0 5%;
+  text-align: center;
 }
 /* MAIN */
 main {
   width: 100%;
-  /* padding: 0 5%; */
+  padding: 0 2%;
   display: flex;
   background-color: rgb(163, 168, 167);
 }
