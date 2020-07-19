@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="concluded">
-          <div class="button" onclick=finish()>FINALIZAR</div>
+          <div class="button" onclick=(finish(),modal())>FINALIZAR</div>
         </div>
       </form>
 
@@ -89,10 +89,10 @@
     </footer>
   </div>
 
-  <div className="modalAlert" id="modalError">
-    <div className="boxAlert">
-      <h1 className="h1Error">C</h1>
-      <button className="button error" onClick=closed()>OK</button>
+  <div class="modalAlert" id="modalError">
+    <div class="boxAlert">
+      <h1 id="h1Error"></h1>
+      <button class="button error" onClick=modal()>OK</button>
     </div>
   </div>
 
