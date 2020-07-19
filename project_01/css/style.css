@@ -67,16 +67,11 @@ header div.menu ul li a {
     justify-content: center;
   }
 }
-
 /* FIM HEADER */
-
-/* H1 */
 div.h1 h1{
   padding: 0 5%;
 }
-
 /* MAIN */
-
 main {
   padding: 0 5%;
   display: flex;
@@ -134,9 +129,6 @@ div.options ul li div {
   background-color: red;
 }
 
-
-
-
 div.concluded {
   margin: 10px;
   border-radius: 10px;
@@ -164,8 +156,6 @@ aside {
   padding: 5%;
   background-color: coral;
 }
-
-
 
 /* MODAL ERROR */
 .modalAlert {

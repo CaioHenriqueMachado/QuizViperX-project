@@ -15,6 +15,7 @@ function calculator(question, number) {
 }
 
 function finish(){
+  points = 0;
   var resp = [ 1, 3, 1, 1];
   options.forEach( (alternative, i) => {
   alternative == resp[i] ? points+= 25 : points+= 0;
