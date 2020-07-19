@@ -1,4 +1,5 @@
 var options = [ 0, 0, 0, 0 ];
+var points = 0;
 
 function calculator(question, number) {
   const divs = document.getElementsByClassName('question'+ String(question));
@@ -15,16 +16,15 @@ function calculator(question, number) {
 
 function finish(){
   var resp = [ 1, 3, 1, 1];
-  var points = 0;
   options.forEach( (alternative, i) => {
   alternative == resp[i] ? points+= 25 : points+= 0;
   });
- console.log(points);
 }
 
 function modal(){
+  var textResp = 'Você finalizou com' + String(points) + 'pontos';
   const modal = document.getElementById('modalError');
   modal.classList.toggle('show')
   const texto = document.getElementById('h1Error');
-  texto.innerText = 'SUA PONTUAÇÃO FOI DE ' + String(points);
+  texto.innerText = `Você finalizou com ${points} pontos`;
 }
