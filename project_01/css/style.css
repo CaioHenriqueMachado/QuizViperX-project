@@ -163,12 +163,41 @@ footer {
   background-color: royalblue;
 }
 
+footer div.redes-sociais {
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  padding: 10px 0;
+  border-top: 1px solid white;
+}
+
+footer div.redes-sociais div.icons {
+  padding: 15px 0;
+}
+
+footer div.redes-sociais div.icons img {
+  width: 50px;
+  height: 50px;
+  margin: 0 5%;
+}
+
+footer div.about {
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  padding: 15px 5%;
+}
+
+footer div.about h3 {
+  margin: 10px 0;
+}
+
 footer div.copy {
   background-color: black;
   color: white;
   border-top: 1px solid white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 footer div.copy button {
