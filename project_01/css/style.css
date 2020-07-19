@@ -164,3 +164,40 @@ aside {
   padding: 5%;
   background-color: coral;
 }
+
+
+
+/* MODAL ERROR */
+.modalAlert {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalAlert.show {
+  display: flex;
+}
+
+.button.error{
+  width: 20%;
+  height: 60px;
+}
+
+.boxAlert {
+  width: 350px;
+  height: 300px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
+  z-index: 9999;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+}

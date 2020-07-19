@@ -13,14 +13,20 @@ function calculator(question, number) {
   console.log(options);
 }
 
-var resp = [ 1, 3, 1, 1];
 
-function finish (){
+function finish(){
+  var resp = [ 1, 3, 1, 1];
   var points = 0;
   options.forEach( (alternative, i) => {
   alternative == resp[i] ? points+= 25 : points+= 0;
   });
  
  console.log(points); 
+ closed();
 }
 
+
+function closed(){
+  const modal = document.getElementById('modalError');
+  modal.classList.toggle('show')
+}
