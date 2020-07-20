@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
 body {
   font-weight: 400;
@@ -96,7 +100,6 @@ header div.menu ul li a:hover {
   color:#F34605;
 }
 
-
 @media only screen and (max-width: 760px) {
   header {
     justify-content: center;
@@ -167,8 +170,6 @@ div.options ul {
 div.options ul li {
   margin: 10px 0;
   border-radius: 5px;
-
-  /* height: 30px; */
 }
 
 div.options ul li div {
@@ -178,8 +179,6 @@ div.options ul li div {
   padding: 3px 0;
   
 }
-
-
 
 .unselected {
   background-color: whitesmoke;
