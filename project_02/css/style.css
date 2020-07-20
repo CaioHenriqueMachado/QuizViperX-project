@@ -10,7 +10,8 @@
 
 
 body {
-  font: 400 14px Roboto, sans-serif;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -18,6 +19,17 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 760px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
 
 div.container {
   width: 100%;
@@ -124,13 +136,23 @@ section {
 }
 div.box {
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   background-color: gray;
   text-align: center;
+  min-height: 90vh;
 }
 
 div.question {
+  width: 100%;
+  border-radius: 5px;
+  min-height: 50px;
+}
+
+div.question img {
+  border: 5px solid white;
+  border-radius: 5px;
+  height: 50vh;
   width: 100%;
 }
 
@@ -144,14 +166,16 @@ div.options ul {
 
 div.options ul li {
   margin: 10px 0;
-  border-radius: 10px;
-  height: 30px;
+  border-radius: 5px;
+
+  /* height: 30px; */
 }
 
 div.options ul li div {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 3px 0;
   
 }
 
