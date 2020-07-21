@@ -1,7 +1,7 @@
-var options = [ 0, 0, 0, 0 ];
+var options = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
 var points = 0;
 
-function calculator(question, number) {
+function calculator(question, number, points) {
   const divs = document.getElementsByClassName('question'+ String(question));
   initial = document.getElementsByClassName('question'+ String(question) +' selected');
 
@@ -10,19 +10,36 @@ function calculator(question, number) {
     divSelected[0].classList.replace('selected', 'unselected');
   }
   divs[number].classList.add('selected');
-  options[question - 1] = number + 1;
+  options[question - 1] = points;
   console.log(options);
 }
 
 function finish(){
   points = 0;
-  var resp = [ 1, 3, 1, 1];
   options.forEach( (alternative, i) => {
-  alternative == resp[i] ? points+= 25 : points+= 0;
+    if (alternative == 1){
+      console.log('Passou pelo 1');
+      points+=10;
+    }
+    if (alternative == 2){
+      console.log('Passou pelo 2');
+      points+=7;
+    }
+    if (alternative == 3){
+      console.log('Passou pelo 3');
+      points+=4;
+    }
+    if (alternative == 4){
+      console.log('Passou pelo 4');
+      points+=1;
+    }
+
   });
 }
 
+
 function modal(){
+  console.log(points);
   var textResp = 'Você finalizou com' + String(points) + 'pontos';
   const modal = document.getElementById('modalError');
   modal.classList.toggle('show')
