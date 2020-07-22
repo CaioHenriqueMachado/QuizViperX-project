@@ -50,6 +50,4 @@ function modal(){
   const modal = document.getElementById('modalError');
   modal.classList.toggle('show')
   
-  
-
 }
