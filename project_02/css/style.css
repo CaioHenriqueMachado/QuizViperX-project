@@ -293,11 +293,6 @@ footer div.copy button {
   display: flex;
 }
 
-.button.error{
-  width: 20%;
-  height: 60px;
-}
-
 .boxAlert {
   width: 90vw;
   height: 90vh;
@@ -317,4 +312,16 @@ footer div.copy button {
   height: 60%;
   border: 1px solid black;
   border-radius: 5px;
+  margin: 20px 0;
+}
+
+.boxAlert button {
+  padding: 10px;
+  width: 20%;
+  color: white;
+  font-weight: bold;
+  font-size: 12pt;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
 }
