@@ -1,5 +1,6 @@
 var options = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
 var points = 0;
+var value = 10;
 
 function calculator(question, number, points) {
   const divs = document.getElementsByClassName('question'+ String(question));
@@ -29,12 +30,26 @@ function finish(){
       points+=1;
     }
   });
+
+  while (true){
+    if (points >= value){
+      value+=10;
+    }else {
+      break;
+    }
+  }
 }
 
 function modal(){
-  var textResp = 'Você finalizou com' + String(points) + 'pontos';
+  const texto = document.getElementById('h1Error');
+  texto.innerText = `Seu nível marombeiro é de ${points}%`;
+
+  const img = document.getElementById('imageResult');
+  img.src = `./img/result/value${value}.jpg`;
+
   const modal = document.getElementById('modalError');
   modal.classList.toggle('show')
-  const texto = document.getElementById('h1Error');
-  texto.innerText = `Você finalizou com ${points} pontos`;
+  
+  
+
 }
