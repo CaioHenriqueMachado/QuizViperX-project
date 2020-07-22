@@ -217,7 +217,10 @@ div.button:active {
 aside {
   width: 30%;
   padding: 5%;
-  background-color: coral;
+}
+
+div.adsense {
+  height: 100px;
 }
 
 /* FOOTER */

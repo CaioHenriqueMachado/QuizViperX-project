@@ -11,35 +11,27 @@ function calculator(question, number, points) {
   }
   divs[number].classList.add('selected');
   options[question - 1] = points;
-  console.log(options);
 }
 
 function finish(){
   points = 0;
   options.forEach( (alternative, i) => {
     if (alternative == 1){
-      console.log('Passou pelo 1');
       points+=10;
     }
     if (alternative == 2){
-      console.log('Passou pelo 2');
       points+=7;
     }
     if (alternative == 3){
-      console.log('Passou pelo 3');
       points+=4;
     }
     if (alternative == 4){
-      console.log('Passou pelo 4');
       points+=1;
     }
-
   });
 }
 
-
 function modal(){
-  console.log(points);
   var textResp = 'Você finalizou com' + String(points) + 'pontos';
   const modal = document.getElementById('modalError');
   modal.classList.toggle('show')
